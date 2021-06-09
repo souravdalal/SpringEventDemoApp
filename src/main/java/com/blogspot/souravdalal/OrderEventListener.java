@@ -19,10 +19,10 @@ public class OrderEventListener {
 	@Async
 	@EventListener
 	@Order(1)
-	public void sendEmail(OrderEvent event) {
+	public void sendEmailToCustomer(OrderEvent event) {
 		log.info("Starting email sending");
 		delay();
-		log.info("sendEmail:" + event);
+		log.info("sendEmailToCustomer:" + event);
 	}
 
 	@EventListener
